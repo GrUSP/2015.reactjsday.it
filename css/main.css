@@ -10,10 +10,7 @@ Author URI: http://www.gnvpartners.com/
 /* BASIC PAGE SETUP ============================================================================= */
 
 body {
-	background-color: #e55c46;/* rosso */ /* scegli il colore che preferisci per lo sfondo :) commentando o elimindando gli altri*/
-	background-color: #8d89a7;/* viola */
-	background-color: #407E31; /*verde */
-	background-color: #928a74; /*marrone*/
+	background-color: #05A9D6;
 	font-family: helvetica, verdana, arial, helve, sans-serif;
 	font-size: 15px;
 	line-height: 23px;
@@ -52,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size : 100px;
-	line-height: 110px;
+	line-height: 1.2;
 	font-weight: 800;
 	color: #fff;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
@@ -67,7 +64,7 @@ h1 a{
 
 h2 {
 	font-size : 50px;
-	line-height: 60px;
+	line-height: 1.2;
 	font-weight: 800;
 	color: rgba(0, 0, 0, .4);
 	text-shadow: 1px 1px 1px rgba(255, 255, 255, .1);
@@ -230,7 +227,7 @@ a.more:hover{
 
 
 /**/
-.alpha_8, .alpha_16, .alpha_24, .alpha_32, .sponsors{
+.alpha_8, .alpha_16, .alpha_24, .alpha_32, .sponsors, .conference {
 	padding: 60px 0 0 0;
 }
 .alpha_8{
@@ -346,10 +343,11 @@ em.plus{
 .event_logo {
     text-align: right;    
 }
-.event_logo img{
-    width: 100%;
-    max-width: 220px;
-    height: auto;
+
+.event_logo img {
+	width: 25%;
+	vertical-align: middle;
+	margin-top: -0.2em;
 }
 .event_name{
     text-align: left;
@@ -872,16 +870,23 @@ a#back_top:hover {
 	}
 
 	.event_logo {
-		width: 50%;
+		width: 100%;
 		margin: auto;
 		float: none;
+	}
+
+	.event_logo img {
+		display: block;
+		width: 120px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.event_name{
 		text-align: center;
 	}
 	h1{
-		margin-bottom: -30px;
+		margin-bottom: 0.5em;
 	}
 
 	.social_grusp li{
@@ -921,4 +926,24 @@ a#back_top:hover {
 		margin-top: 5px;
 	}
 
+}
+
+
+/* COOKIE MESSAGE ============================================================================= */
+#cookieChoiceInfo {
+    line-height: 1.5;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	color: #fff !important;
+	font-style: 12px;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	box-sizing: border-box;
+}
+#cookieChoiceDismiss {
+  margin-left: 24px;
+  background-color: #05A9D6;
+  display: inline-block;
+  padding: 0 .7em;
+  color: #fff;
+  text-decoration: none;
 }
