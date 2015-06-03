@@ -15,8 +15,8 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
   <meta property="og:url"             content="2015.reactjsday.it" />
-  <meta property="og:title"           content="React.js Day {{ page.conf_data }} - Conference" />
-  <meta property="og:image"           content="http://2015.reactjsday.it/img/confs/css/reactjsday.png" />
+  <meta property="og:title"           content="React.js Day {{ page.conf_data }} - Italian Conference" />
+  <meta property="og:image"           content="http://2015.reactjsday.it/img/confs/reactjs/reactjsday-social.png" />
 
 
   <link href='http://fonts.googleapis.com/css?family=Exo:200,900,700,400|Pacifico' rel='stylesheet' type='text/css'>
@@ -62,7 +62,7 @@
             {% if page.cfp %} <li><a href="#cfp" title="">Call for paper</a></li> {% endif %}
             {% if page.tickets %} <li><a href="#tickets" title="">Registrati</a></li> {% endif %}
             {% if page.speakers %} <li><a href="#programma" title="">Programma</a></li> {% endif %}
-            <li><a href="#location" title="">La location</a></li>
+            {% if page.where %}<li><a href="#location" title="">La location</a></li>{% endif %}
             <!--li><a href="#workshop" title="">I workshop</a></li-->
             <li><a href="#sponsor" title="">Gli sponsor</a></li>
           </ul>
@@ -76,7 +76,7 @@
           <em class="plus"><img src="/img/bg_plus.png" alt="bg_plus" width="12" height="12" /></em>
 
 
-          <a id="fevr" class="organizer_logo" href="http://www.fevr.it/"><img src="/img/confs/reactjs/fevr-logo.png" alt="Front-enders Verona" height="80"/><span>Front-enders Verona</span></a></p>
+          <a id="fevr" class="organizer_logo" href="http://www.fevr.it/"><img src="/img/confs/reactjs/fevr-logo.png" alt="FEVR - Frontenders Verona" height="80"/><span>FEVR - Frontenders Verona</span></a></p>
 
           <!-- <a id="ideato" class="organizer_logo" href="http://www.ideato.it/"><img src="/img/sponsors/sponsor_ideato.png" alt="ideato" height="80"/><span>Ideato</span></a></p>
  -->
@@ -138,6 +138,15 @@
     $("#fittext2").fitText(1.6);
     //$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
   </script>
+
+
+<script src="js/cookiechoices.js"></script>
+<script>
+  jQuery(function () {
+    cookieChoices.showCookieConsentBar('Questo sito raccoglie dati statistici anonimi sulla navigazione rispettando la privacy dei tuoi dati personali e secondo le norme previste dalla legge. Continuando a navigare su questo sito, cliccando sui link al suo interno o semplicemente scrollando la pagina verso il basso, accetti il servizio e gli stessi cookie.',
+      'ok', '', 'http://example.com');
+  });
+</script>
 
 <script type="text/javascript">
 

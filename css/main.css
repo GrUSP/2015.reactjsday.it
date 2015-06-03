@@ -227,7 +227,7 @@ a.more:hover{
 
 
 /**/
-.alpha_8, .alpha_16, .alpha_24, .alpha_32, .sponsors{
+.alpha_8, .alpha_16, .alpha_24, .alpha_32, .sponsors, .conference {
 	padding: 60px 0 0 0;
 }
 .alpha_8{
@@ -926,4 +926,24 @@ a#back_top:hover {
 		margin-top: 5px;
 	}
 
+}
+
+
+/* COOKIE MESSAGE ============================================================================= */
+#cookieChoiceInfo {
+    line-height: 1.5;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	color: #fff !important;
+	font-style: 12px;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	box-sizing: border-box;
+}
+#cookieChoiceDismiss {
+  margin-left: 24px;
+  background-color: #05A9D6;
+  display: inline-block;
+  padding: 0 .7em;
+  color: #fff;
+  text-decoration: none;
 }
