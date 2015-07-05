@@ -2,8 +2,8 @@
 <script>
 function initialize_map() {
         var mapOptions = {
-          zoom: 15,
-          center: new google.maps.LatLng(45.430949, 10.987381),
+          zoom: 14,
+          center: new google.maps.LatLng(45.4206658, 10.9845741),
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(document.getElementById('map_canvas'),
@@ -16,12 +16,12 @@ function initialize_map() {
 			title:"Stazione Verona Porta Nuova"
         });
 
-  //       var I3P = new google.maps.Marker({
-  //           position: new google.maps.LatLng(45.49778, 9.22135),
-  //           map: map,
-  //           icon: 'img/marker_i3p.png',
-		// 	title:"Talent Garden Milano"
-  //       });
+         var I3P = new google.maps.Marker({
+            position: new google.maps.LatLng(45.4206658, 10.9845741),
+            map: map,
+            icon: 'img/marker_i3p.png',
+			title:"Ordine degli Ingegneri di Verona e Provincia"
+        });
 		// var hotel_sanpaolo = new google.maps.Marker({
   //           position: new google.maps.LatLng(45.0598373, 7.6529137),
   //           map: map,
@@ -59,45 +59,45 @@ function initialize_map() {
 			<dl>
 			  <dt class="event_location"><span><strong>Event location</strong></span></dt>
 			    <dd  class="event_location">
-			    	<a href="#">location</a><br/>
-				via nomeVia 00, <br/>
-				Verona, Italy
+			    	<a href="http://www.ingegneri.vr.it/" target="_blank">Ordine degli Ingegneri di Verona e Provincia</a><br/>
+					Via Santa Teresa, 5 <br/>
+					Verona, Italy
 				</dd>
-			  <dt class="eat"><span><strong>Dove mangiare</strong></span></dt>
-			    <dd>Ristoranti</dd>
-			  <dt class="get_to"><span><strong>Come arrivare</strong></span></dt>
-			    <dd>Trasporti</dd>
-			  <dt class="stay"><span><strong>Dove dormire</strong></span></dt>
-			    <dd>Alberghi</dd>
+			  <dt class="eat"><span><strong>Where to eat</strong></span></dt>
+			    <dd>Restaurants</dd>
+			  <dt class="get_to"><span><strong>How to get to the conference</strong></span></dt>
+			    <dd>Transportations</dd>
+			  <dt class="stay"><span><strong>Accommodations</strong></span></dt>
+			    <dd>Hotels</dd>
 			</dl>
 		</div>
 
 		<div class="clear"></div>
 
 		<div class="column_3">
-			<h5>In auto</h5>
-			<p>Dall'autostrada, seguire le indicazioni per il centro.</p>
+			<h5>By car</h5>
+			<p>From A4 Verona Sud Exit: follow the direction to Fiera - Verona Centro. Drive along Viale delle Nazioni. Continue along Viale del Lavoro until you reach the intersection with Viale dell'Agricultura. Turn right and, reached the end of the street, turn left. Drive straight along Via Santa Teresa to the entrance of the compound on the left.</p>
 
 		</div>
 
 		<div class="column_3">
-			<h5>In treno</h5>
+			<h5>By train</h5>
 			<p>
-				<strong>Dalla stazione di Verona Porta Nuova (Frecciargento)</strong>: xxx.
+				<strong>From Verona Porta Nuova station (Frecciargento)</strong>: take bus number 51 at platform "B" direction "SACRA FAMIGLIA" (here is the time schedule for <a href="http://m.atv.verona.it/#/routes/51/stops/2019/directions/1/times" target="_blank">bus #51</a>). The run will be from “STAZIONE PORTA NUOVA” to “VIA S. TERESA 51“, which is really near the venue (go back for about 100 meters).<br /><br />You can also get to the venue by taxi. They are near the exit, on the right.
 			</p>
 		</div>
 
 		<div class="column_3">
-			<h5>In aereo</h5>
+			<h5>By plane</h5>
 			<p>
-				<strong>Da Verona Villafranca</strong>: xxx.
+				<strong>From Verona Villafranca Airport</strong>: Take the Tangenziale following Verona direction. Take the junction to Verona Centro. At the end of the Tangenziale turn right into Via Luciano dal Cero. At the second traffic light drive straight and then turn right into Viale Piave. Stay on the third lane (Modena - Ferrara - P Fiera). The entrance of the venue is just at the end of the underpass on the right.
 			</p>
 		</div>
 
 		<div class="column_3">
-			<h5>Pernottamento</h5>
+			<h5>Accommodations</h5>
 			<p>
-<a href="http://www.booking.com/searchresults.it.html?label=gog235jc-district-it-it-verona-unspec-it-com;sid=8ed0b03bbe854cfaf9ba43d8e1273aeb;dcid=4;checkin_monthday=30;checkin_year_month=2015-10;checkout_monthday=31;checkout_year_month=2015-10;class_interval=1;csflt=%7B%7D;dtdisc=0;hlrd=0;hyb_red=0;inac=0;nha_red=0;no_rooms=1;offset=0;redirected_from_city=0;redirected_from_landmark=0;redirected_from_region=0;review_score_group=empty;score_min=0;si=ai%2Cco%2Cci%2Cre%2Cdi;src=searchresults;ss_all=0;sshis=0;ssne_untouched=Milano&;city=-132092;origin=disamb;srhash=990529605;srpos=1" target="_blank">Alberghi in zona</a>
+<a href="http://www.booking.com/searchresults.it.html?label=gog235jc-district-it-it-verona-unspec-it-com;sid=8ed0b03bbe854cfaf9ba43d8e1273aeb;dcid=4;checkin_monthday=30;checkin_year_month=2015-10;checkout_monthday=31;checkout_year_month=2015-10;class_interval=1;csflt=%7B%7D;dtdisc=0;hlrd=0;hyb_red=0;inac=0;nha_red=0;no_rooms=1;offset=0;redirected_from_city=0;redirected_from_landmark=0;redirected_from_region=0;review_score_group=empty;score_min=0;si=ai%2Cco%2Cci%2Cre%2Cdi;src=searchresults;ss_all=0;sshis=0;ssne_untouched=Milano&;city=-132092;origin=disamb;srhash=990529605;srpos=1" target="_blank">Hotels nearby</a>
 			</p>
 		</div>
 	</div>
