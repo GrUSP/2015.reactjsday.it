@@ -658,20 +658,25 @@ a:hover.slides{
 	text-align: center;
 	margin-bottom: 80px;
 }
-.sponsors .banner{
-	display: inline-block;
-	margin-left: 1%;
-	margin-right: 1%;
-	line-height: 0;
+.sponsors .banner {
+	display: block;
+	margin: 0 auto;
 	text-align: center;
+}
+.sponsors .banner + .banner {
+	margin-top: 1em;
+}
+.sponsors .banner > img {
 	border: 1px solid rgba(255,255,255,.8);
 	-moz-box-shadow: 0 0 5px rgba(0,0,0,.5);
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
 	box-shadow: 0 0 5px rgba(0,0,0,.5);
+	height: auto;
+	max-width: 100%;
+
 }
 .sponsors .banner img{
-	width: 100%;
-	height: auto;
+
 }
 
 .sponsors h4 {
@@ -710,14 +715,92 @@ a:hover.slides{
 }
 
 .gold_sponsors .banner {
-	width: 21.68%;
+	width: 70%;
+	max-width: 320px;
 }
 .silver_sponsors .banner{
-	width: 16.8%;
+	width: 60%;
+	max-width: 280px;
 }
-.bronze_sponsors .banner{
-	width: 13.5%;
+.bronze_sponsors .banner {
+	width: 45%;
+	max-width: 230px;
 }
+
+.bronze_sponsors .banner--square {
+	width: 30%;
+	max-width: 220px;
+}
+
+@media (min-width: 768px) {
+	.gold_sponsors .banner {
+		width: 70%;
+		max-width: 320px;
+	}
+	.silver_sponsors .banner{
+		width: 60%;
+		max-width: 280px;
+	}
+	.bronze_sponsors .banner {
+		width: 45%;
+		max-width: 230px;
+	}
+
+	.bronze_sponsors .banner--square {
+		width: 30%;
+		max-width: 220px;
+	}
+}
+
+@media (min-width: 900px) {
+
+	.sponsors .banner {
+		display: inline-block;
+		margin-left: 10px;
+    	margin-right: 10px;
+    	margin-bottom: 1em;
+    	margin-top: 0 !important;
+	}
+
+	.gold_sponsors .banner {
+		width: 27%;
+	}
+	.silver_sponsors .banner{
+		width: 25%;
+	}
+	.bronze_sponsors .banner{
+		width: 20%;
+	}
+	.bronze_sponsors .banner--square {
+		width: 18%;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.sponsors .banner {
+		display: inline-block;
+		margin-left: 10px;
+    	margin-right: 10px;
+    	margin-bottom: 1em;
+    	margin-top: 0 !important;
+	}
+
+	.gold_sponsors .banner {
+		width: 21.68%;
+	}
+	.silver_sponsors .banner{
+		width: 16.8%;
+	}
+	.bronze_sponsors .banner{
+		width: 13.5%;
+	}
+	.bronze_sponsors .banner--square {
+		width: 12%;
+	}
+}
+
+
 
 
 
