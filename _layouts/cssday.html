@@ -43,7 +43,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  
+
 
 </head>
 
@@ -106,9 +106,9 @@
         <div class="separator"></div>
 
       </header>
-      
+
       {{ content }}
-      
+
       <footer id="site_footer">
         <div class="container group">
           <div class="ftr_info">
@@ -135,6 +135,10 @@
     $("#fittext1").fitText(1.0);
     $("#fittext2").fitText(1.6);
     //$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+    //
+    $(document).on('click', 'a[rel="tooltip"]', function (e) {
+      e.preventDefault();
+    });
   </script>
 
 <script type="text/javascript">
